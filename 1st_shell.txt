@@ -1,7 +1,0 @@
-1.Write a shell script to display current time and date using data command
-
-now="(date)"
-now="$(date +'%d/%m/%Y')"
-echo "\n date $now "
-now=$(date +"%T")
-echo "Current time : $now"
