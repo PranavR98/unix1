@@ -1,0 +1,21 @@
+Q) Write a shell program to perform basic arithmetic operations:
+
+echo "Enter the value of a"
+read a
+echo "Enter the value of b"
+read b
+echo "1.Addition"
+echo "2.Subtraction"
+echo "3.Multiplication"
+echo "4.Division"
+echo "5.Modulus"
+read ch
+case $ch in
+        1)echo $(expr $a + $b);;
+        2)echo $(expr $a - $b);;
+        3)echo $(expr $a \* $b);;
+        4)echo $(expr $a / $b);;
+        5)echo $(expr $a % $b);;
+        *)echo "This is not a choice"
+esac
+
