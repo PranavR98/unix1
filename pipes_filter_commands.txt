@@ -1,0 +1,29 @@
+2nd session based on  filter commands and pipes
+
+1.Display third column of filename.csv without printing the head and also sort the same.
+$cut -d, -f 3 filename.csv | grep -d CGPA | sort
+
+2.Display only current time using date commands.
+$date +%x
+
+3.Use unique with all possible options.
+$uniq -f filename.csv
+$uniq -d filename.csv
+$uniq -c filename.csv
+$uniq -u filename.csv
+$uniq -z filename.csv
+$uniq -w filename.csv
+
+4.Print number of lines for ls -l command.
+$ls -l | wc -l
+
+5.Display USN from 7-14 along with other files.
+$head -n 14 filename.csv | tail -n 7
+
+6.Sort only name field from filename.csv.
+$cut -d , -f 1 filename.csv | sort
+
+7.Replace name with students name.
+$cut -d , -f 1 filename.csv | head -n 1 | tr ["name"] ["stud"]
+
+
