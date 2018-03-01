@@ -5,3 +5,13 @@ for file in *
 do      
         mv "$file" "$cdate"_"$file"
 done
+
+Grep with different options
+
+$ grep -i "unix" sample
+$ grep -v "unix" sample
+$ grep -n "unix" sample
+$ grep -c "unix" sample
+$ grep -l "unix" sample
+$ grep -x "unix" sample
+
