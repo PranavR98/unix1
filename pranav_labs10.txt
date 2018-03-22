@@ -1,0 +1,22 @@
+Id 	Name 	Designation 	Department 	Salery
+12 	Shoaib 	manager 	accounts 	25000
+14 	Aemen 	manager 	sales 	15000
+13 	Vishal 	assistant 	account 	54555
+15 	Uday 	secretary 	sales 	75444
+11 	Pranav 	assistant 	sales 	24000
+
+
+1)Display employee details whose designation is Manager
+    sed -n '/manager/p' lab10emp.csv
+    
+2)Display whose name is in 1/2
+    sed -n '1,2p' lab10emp.csv
+  
+3)Display salary which starts with 2
+  sed -n '/2..../p' lab10emp.csv 
+
+
+4)From line 1 to 5 if manager replace with director
+sed -n '1,5p' lab10emp.csv | sed 's/manager/director/g'
+
+
